@@ -1,14 +1,27 @@
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-const ContactListItem = ({ name, number, onDelete }) => (
+import { deleteContact } from '../../redux/contacts/contacts-operations';
+
+const ContactListItem = ({ id, name, number, deleteContact }) => (
   <li className="contact-list-item">
     <span className="contact-name">{name}:</span>
     <span className="contact-number"> {number}</span>
-    <button className="contact-delete-btn" onClick={onDelete}>
+    <button className="contact-delete-btn" onClick={() => deleteContact(id)}>
       Delete
     </button>
   </li>
 );
+
+// const mapStateToProps = (state) => {
+//   return {};
+// };
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    deleteContact: (id) => dispatch(deleteContact(id)),
+  };
+};
 
 ContactListItem.propTypes = {
   name: PropTypes.string,
@@ -16,4 +29,4 @@ ContactListItem.propTypes = {
   onDelete: PropTypes.func,
 };
 
-export default ContactListItem;
+export default connect(null, mapDispatchToProps)(ContactListItem);
