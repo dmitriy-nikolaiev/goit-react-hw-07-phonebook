@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 // import { v4 as uuidv4 } from 'uuid';
 
-import { getContacts as getContactsSelector } from '../../redux/contacts/contacts-selectors';
 import { addContact } from '..//..//redux/contacts/contacts-operations';
+import { getContacts as getContactsSelector } from '../../redux/contacts/contacts-selectors';
 
 class ContactForm extends Component {
   state = {

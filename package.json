@@ -29,7 +29,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start-json": "json-server --port 3001 --watch db.json"
+    "start-json": "json-server --port 3001 --delay 100 --watch db.json"
   },
   "eslintConfig": {
     "extends": [

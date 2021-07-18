@@ -1,0 +1,24 @@
+{
+  "contacts": [
+    {
+      "name": "Sabo Vertuneds",
+      "number": "008-458-587-698",
+      "id": "d0ef3de1-2da5-430b-97af-f2a47d6ee26d"
+    },
+    {
+      "name": "Rosie Simpson",
+      "number": "459-12-56",
+      "id": "235977e2-8c3d-4f68-8d10-2949b03cfbd7"
+    },
+    {
+      "name": "Eden Clements",
+      "number": "645-17-79",
+      "id": "OQw-vu5"
+    },
+    {
+      "name": "Annie Copeland",
+      "number": "458-587-698",
+      "id": "HgpSbQB"
+    }
+  ]
+}
